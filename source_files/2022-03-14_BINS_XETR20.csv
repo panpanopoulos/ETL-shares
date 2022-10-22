@@ -1,0 +1,3 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+GB0009390070,64K,"VOLEX PLC         LS -,25",Common stock,EUR,7026067,2022-03-14,20:30,3.04,3.04,3.04,3.04,0,1
+DE000A3MQCP7,FMEN,FRESEN.MED.CARE O.N. NEUE,Common stock,EUR,7290694,2022-03-14,20:30,55,55,55,55,0,1

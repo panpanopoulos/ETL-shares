@@ -1,0 +1,2 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+US9839191015,XIX,"XILINX INC.        DL-,01",Common stock,EUR,4520907,2022-02-14,20:30,191.18,191.18,191.18,191.18,0,1

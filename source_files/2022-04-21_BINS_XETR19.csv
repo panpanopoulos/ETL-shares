@@ -1,0 +1,3 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+XS2314659447,0IIE,GPF PHY COPP ETC,ETC,EUR,6742563,2022-04-21,19:30,8.95,8.95,8.95,8.95,0,1
+DE000A3MQD61,AIX,AIXTRON SE NA O.N. NEUE,Common stock,EUR,7459088,2022-04-21,19:30,20,20,20,20,0,1

@@ -1,0 +1,3 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+LU0975334821,XY1D,XTR.II IB.E.G.B.YP.1-3 1D,ETF,EUR,2506086,2022-01-11,20:30,135.665,135.665,135.665,135.665,0,1
+US92243A2006,NB11,"VAXART INC.        DL-,10",Common stock,EUR,7026107,2022-01-11,20:30,5.344,5.344,5.344,5.344,0,1

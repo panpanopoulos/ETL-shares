@@ -1,0 +1,4 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+US7502361014,RAG,"RADIAN GRP INC.   DL-,001",Common stock,EUR,6014117,2022-01-06,20:30,18.8,18.8,18.8,18.8,0,1
+IE00B1RR8406,SK3,"SMURFIT KAPPA GR. EO-,001",Common stock,EUR,7026071,2022-01-06,20:30,49.9,49.9,49.9,49.9,0,1
+SE0016101844,1I9A,SINCH AB,Common stock,EUR,7026105,2022-01-06,20:30,11.04,11.04,11.04,11.04,0,1

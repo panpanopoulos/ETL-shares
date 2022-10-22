@@ -1,0 +1,3 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+IE00BLS09M33,PNT,"PENTAIR PLC        DL-,01",Common stock,EUR,6014088,2022-01-19,20:30,59,59,59,59,0,1
+US02208R1068,XQB,"ALTRA INDL MOTION DL-,001",Common stock,EUR,6014094,2022-01-19,20:30,43.8,43.8,43.8,43.8,0,1

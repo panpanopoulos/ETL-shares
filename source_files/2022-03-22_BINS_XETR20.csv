@@ -1,0 +1,4 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+US25470F2039,DC6B,"DISCOVERY B DL-,01",Common stock,EUR,6046012,2022-03-22,20:30,24.4,24.4,24.4,24.4,0,1
+GB00BNYK8G86,7TJ,"DARKTRACE PLC      LS-,01",Common stock,EUR,7026059,2022-03-22,20:30,5.25,5.25,5.25,5.25,0,1
+DE000A3MQDG4,BIO2,BIOTEST AG ST ANGEDIENT.,Common stock,EUR,7335008,2022-03-22,20:30,41,41,41,41,0,1

@@ -1,0 +1,2 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+US2944291051,EFX,"EQUIFAX INC.      DL 1,25",Common stock,EUR,5990137,2022-02-17,20:30,192,192,192,192,0,1

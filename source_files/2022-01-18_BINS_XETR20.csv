@@ -1,0 +1,3 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+CH0563815429,IQL1,IQ INTERNATIONAL AG,Common stock,EUR,5553414,2022-01-18,20:30,0.89,0.89,0.89,0.89,0,1
+DE000A3E5ET8,BIO1,BIOTEST AG VZ O.N. Z.VERK,Common stock,EUR,6973998,2022-01-18,20:30,36,36,36,36,0,1

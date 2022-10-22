@@ -1,0 +1,2 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+US1264081035,CXR,CSX CORP.            DL 1,Common stock,EUR,5988621,2022-02-24,20:30,29.8,29.8,29.8,29.8,0,1

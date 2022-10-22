@@ -1,0 +1,3 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+CH0563815429,IQL1,IQ INTERNATIONAL AG,Common stock,EUR,5553414,2022-01-20,20:30,0.89,0.89,0.89,0.89,0,1
+US9616842061,UCCP,"WESTWATER RES     DL-,001",Common stock,EUR,6014124,2022-01-20,20:30,1.921,1.921,1.921,1.921,0,1

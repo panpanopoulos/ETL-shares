@@ -1,0 +1,3 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+CH0563815429,IQL1,IQ INTERNATIONAL AG,Common stock,EUR,5553414,2022-01-17,20:30,0.89,0.89,0.89,0.89,0,1
+IT0005143547,EM8,ENERGICA MOTOR CO.S.P.A.,Common stock,EUR,7026075,2022-01-17,20:30,3.09,3.09,3.09,3.09,0,1

@@ -1,0 +1,3 @@
+ISIN,Mnemonic,SecurityDesc,SecurityType,Currency,SecurityID,Date,Time,StartPrice,MaxPrice,MinPrice,EndPrice,TradedVolume,NumberOfTrades
+DE0006459324,LUS,LANG+SCHWARZ AG NA,Common stock,EUR,2505041,2022-02-09,20:30,73.3,73.3,73.3,73.3,0,1
+US03076C1062,A4S,"AMERIPRISE FINL    DL-,01",Common stock,EUR,4704745,2022-02-09,20:30,280,280,280,280,0,1
