@@ -1,0 +1,25 @@
+[2022-11-02 15:11:33,501] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl manual__2022-11-02T15:11:16.694530+00:00 [queued]>
+[2022-11-02 15:11:33,559] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl manual__2022-11-02T15:11:16.694530+00:00 [queued]>
+[2022-11-02 15:11:33,563] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-02 15:11:33,573] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-11-02 15:11:33,577] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-02 15:11:33,692] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_xetra_etl> on 2022-11-02 15:11:16.694530+00:00
+[2022-11-02 15:11:37,042] {standard_task_runner.py:52} INFO - Started process 1172 to run task
+[2022-11-02 15:11:37,046] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'xetra_DAG', 'run_xetra_etl', 'manual__2022-11-02T15:11:16.694530+00:00', '--job-id', '144', '--raw', '--subdir', 'DAGS_FOLDER/xetra_DAG.py', '--cfg-path', '/tmp/tmptsb7vpjj', '--error-file', '/tmp/tmpa6gwxv07']
+[2022-11-02 15:11:37,077] {standard_task_runner.py:80} INFO - Job 144: Subtask run_xetra_etl
+[2022-11-02 15:11:38,714] {task_command.py:369} INFO - Running <TaskInstance: xetra_DAG.run_xetra_etl manual__2022-11-02T15:11:16.694530+00:00 [running]> on host 0163e0790208
+[2022-11-02 15:11:39,050] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=xetra_DAG
+AIRFLOW_CTX_TASK_ID=run_xetra_etl
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-02T15:11:16.694530+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-02T15:11:16.694530+00:00
+[2022-11-02 15:11:39,055] {logging_mixin.py:115} INFO - meta_file.csv
+[2022-11-02 15:12:26,749] {python.py:173} INFO - Done. Returned value was: None
+[2022-11-02 15:12:26,814] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=xetra_DAG, task_id=run_xetra_etl, execution_date=20221102T151116, start_date=20221102T151133, end_date=20221102T151226
+[2022-11-02 15:12:26,961] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-02 15:12:27,092] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

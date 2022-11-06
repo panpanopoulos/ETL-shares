@@ -8,6 +8,7 @@ pandas = "*"
 awscli = "*"
 boto3 = "*"
 jupyter = "*"
+apache-airflow = "*"
 
 [dev-packages]
 

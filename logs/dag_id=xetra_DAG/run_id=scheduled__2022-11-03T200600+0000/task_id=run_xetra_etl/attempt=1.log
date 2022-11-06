@@ -1,0 +1,26 @@
+[2022-11-06 14:02:19,206] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-03T20:06:00+00:00 [queued]>
+[2022-11-06 14:02:19,281] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-03T20:06:00+00:00 [queued]>
+[2022-11-06 14:02:19,297] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-06 14:02:19,305] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-11-06 14:02:19,306] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-06 14:02:20,670] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_xetra_etl> on 2022-11-03 20:06:00+00:00
+[2022-11-06 14:02:33,607] {standard_task_runner.py:52} INFO - Started process 115 to run task
+[2022-11-06 14:02:52,165] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'xetra_DAG', 'run_xetra_etl', 'scheduled__2022-11-03T20:06:00+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/xetra_DAG.py', '--cfg-path', '/tmp/tmpvi87e92i', '--error-file', '/tmp/tmpk6vq1etm']
+[2022-11-06 14:02:52,170] {standard_task_runner.py:80} INFO - Job 150: Subtask run_xetra_etl
+[2022-11-06 14:03:21,933] {task_command.py:369} INFO - Running <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-03T20:06:00+00:00 [running]> on host 0163e0790208
+[2022-11-06 14:04:02,270] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=xetra_DAG
+AIRFLOW_CTX_TASK_ID=run_xetra_etl
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-03T20:06:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-03T20:06:00+00:00
+[2022-11-06 14:05:24,104] {python.py:173} INFO - Done. Returned value was: None
+[2022-11-06 14:05:24,178] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=xetra_DAG, task_id=run_xetra_etl, execution_date=20221103T200600, start_date=20221106T140219, end_date=20221106T140524
+[2022-11-06 14:05:24,879] {local_task_job.py:221} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-11-06 14:05:25,035] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 115. PIDs of all processes in the group: [115]
+[2022-11-06 14:05:25,042] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 115
+[2022-11-06 14:05:25,083] {process_utils.py:75} INFO - Process psutil.Process(pid=115, status='terminated', exitcode=0, started='14:02:32') (115) terminated with exit code 0

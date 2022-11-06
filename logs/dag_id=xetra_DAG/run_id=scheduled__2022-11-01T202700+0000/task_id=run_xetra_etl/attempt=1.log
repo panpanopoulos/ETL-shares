@@ -1,0 +1,52 @@
+[2022-11-01 20:38:48,431] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-01T20:27:00+00:00 [queued]>
+[2022-11-01 20:38:48,546] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-01T20:27:00+00:00 [queued]>
+[2022-11-01 20:38:48,554] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-01 20:38:48,572] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-11-01 20:38:48,593] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-01 20:38:48,957] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_xetra_etl> on 2022-11-01 20:27:00+00:00
+[2022-11-01 20:38:49,062] {standard_task_runner.py:52} INFO - Started process 9274 to run task
+[2022-11-01 20:38:49,129] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'xetra_DAG', 'run_xetra_etl', 'scheduled__2022-11-01T20:27:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/xetra_DAG.py', '--cfg-path', '/tmp/tmpbkxryu6o', '--error-file', '/tmp/tmpyl_cuv7r']
+[2022-11-01 20:38:49,176] {standard_task_runner.py:80} INFO - Job 46: Subtask run_xetra_etl
+[2022-11-01 20:38:49,819] {task_command.py:369} INFO - Running <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-01T20:27:00+00:00 [running]> on host 029aeb09b6d8
+[2022-11-01 20:38:51,394] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=xetra_DAG
+AIRFLOW_CTX_TASK_ID=run_xetra_etl
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-01T20:27:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-01T20:27:00+00:00
+[2022-11-01 20:38:51,415] {logging_mixin.py:115} INFO - /opt\meta_file.csv
+[2022-11-01 20:38:51,476] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/xetra_etl.py", line 80, in run_etl
+    date_to_process, previous_date = return_required_dates(META_FILE_PATH, src_date_format, INITIAL_DATE, today)
+  File "/opt/airflow/dags/xetra_etl.py", line 13, in return_required_dates
+    df_meta_file = pd.read_csv(meta_file_path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: '/opt\\meta_file.csv'
+[2022-11-01 20:38:51,616] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=xetra_DAG, task_id=run_xetra_etl, execution_date=20221101T202700, start_date=20221101T203848, end_date=20221101T203851
+[2022-11-01 20:38:51,698] {standard_task_runner.py:97} ERROR - Failed to execute job 46 for task run_xetra_etl ([Errno 2] No such file or directory: '/opt\\meta_file.csv'; 9274)
+[2022-11-01 20:38:51,759] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-11-01 20:38:52,244] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

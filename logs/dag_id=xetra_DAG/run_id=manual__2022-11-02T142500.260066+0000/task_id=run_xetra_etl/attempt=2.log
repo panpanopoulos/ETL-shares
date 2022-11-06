@@ -1,0 +1,36 @@
+[2022-11-02 14:26:31,082] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl manual__2022-11-02T14:25:00.260066+00:00 [queued]>
+[2022-11-02 14:26:31,104] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl manual__2022-11-02T14:25:00.260066+00:00 [queued]>
+[2022-11-02 14:26:31,105] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-02 14:26:31,106] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2022-11-02 14:26:31,106] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-02 14:26:31,129] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_xetra_etl> on 2022-11-02 14:25:00.260066+00:00
+[2022-11-02 14:26:31,139] {standard_task_runner.py:52} INFO - Started process 147 to run task
+[2022-11-02 14:26:31,145] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'xetra_DAG', 'run_xetra_etl', 'manual__2022-11-02T14:25:00.260066+00:00', '--job-id', '133', '--raw', '--subdir', 'DAGS_FOLDER/xetra_DAG.py', '--cfg-path', '/tmp/tmp_7n_rxzg', '--error-file', '/tmp/tmpo4d9utge']
+[2022-11-02 14:26:31,147] {standard_task_runner.py:80} INFO - Job 133: Subtask run_xetra_etl
+[2022-11-02 14:26:31,469] {task_command.py:369} INFO - Running <TaskInstance: xetra_DAG.run_xetra_etl manual__2022-11-02T14:25:00.260066+00:00 [running]> on host 019c170ba17e
+[2022-11-02 14:26:31,576] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=xetra_DAG
+AIRFLOW_CTX_TASK_ID=run_xetra_etl
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-02T14:25:00.260066+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-02T14:25:00.260066+00:00
+[2022-11-02 14:26:31,578] {logging_mixin.py:115} INFO - /opt/***/meta_file.csv
+[2022-11-02 14:26:31,596] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/xetra_etl.py", line 82, in run_etl
+    df_data = extract(SOURCE_FILES_PATH, previous_date, date_to_process, src_date_format)
+  File "/opt/airflow/dags/xetra_etl.py", line 36, in extract
+    directory_files = os.listdir(source_files_path)
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow\\source_files'
+[2022-11-02 14:26:31,612] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=xetra_DAG, task_id=run_xetra_etl, execution_date=20221102T142500, start_date=20221102T142631, end_date=20221102T142631
+[2022-11-02 14:26:31,630] {standard_task_runner.py:97} ERROR - Failed to execute job 133 for task run_xetra_etl ([Errno 2] No such file or directory: '/opt/airflow\\source_files'; 147)
+[2022-11-02 14:26:31,679] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-11-02 14:26:31,734] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
