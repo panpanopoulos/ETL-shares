@@ -1,4 +1,5 @@
 # ETL-shares
+<<<<<<< HEAD
 A data pipeline which runs automatically on a daily basis and extracts datasets of market shares minute by minute prices, transforms them to calculate specific metrics and loads a report with these metrics inside a targeted repository for a specific date.
 The source data are downloaded from Deutsche Börse, the German marketplace organizer for trading shares.
 The Data pipeline performs the following actions:
