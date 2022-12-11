@@ -1,0 +1,19 @@
+[2022-12-11 13:30:01,028] {processor.py:153} INFO - Started process (PID=63) to work on /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:30:01,030] {processor.py:641} INFO - Processing file /opt/airflow/dags/xetra_DAG.py for tasks to queue
+[2022-12-11 13:30:01,034] {logging_mixin.py:115} INFO - [2022-12-11 13:30:01,033] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:30:06,972] {processor.py:651} INFO - DAG(s) dict_keys(['xetra_DAG']) retrieved from /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:30:07,076] {logging_mixin.py:115} INFO - [2022-12-11 13:30:07,075] {dag.py:2371} INFO - Sync 1 DAGs
+[2022-12-11 13:30:07,271] {logging_mixin.py:115} INFO - [2022-12-11 13:30:07,271] {dag.py:2919} INFO - Setting next_dagrun for xetra_DAG to 2022-11-14T15:00:00+00:00, run_after=2022-11-15T15:00:00+00:00
+[2022-12-11 13:30:07,506] {processor.py:161} INFO - Processing /opt/airflow/dags/xetra_DAG.py took 6.500 seconds
+[2022-12-11 13:30:39,162] {processor.py:153} INFO - Started process (PID=125) to work on /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:30:39,186] {processor.py:641} INFO - Processing file /opt/airflow/dags/xetra_DAG.py for tasks to queue
+[2022-12-11 13:30:39,208] {logging_mixin.py:115} INFO - [2022-12-11 13:30:39,208] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:30:46,387] {processor.py:651} INFO - DAG(s) dict_keys(['xetra_DAG']) retrieved from /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:30:46,669] {logging_mixin.py:115} INFO - [2022-12-11 13:30:46,668] {dag.py:2371} INFO - Sync 1 DAGs
+[2022-12-11 13:30:47,086] {processor.py:161} INFO - Processing /opt/airflow/dags/xetra_DAG.py took 7.970 seconds
+[2022-12-11 13:31:18,408] {processor.py:153} INFO - Started process (PID=177) to work on /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:31:18,423] {processor.py:641} INFO - Processing file /opt/airflow/dags/xetra_DAG.py for tasks to queue
+[2022-12-11 13:31:18,442] {logging_mixin.py:115} INFO - [2022-12-11 13:31:18,442] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:31:27,467] {processor.py:651} INFO - DAG(s) dict_keys(['xetra_DAG']) retrieved from /opt/airflow/dags/xetra_DAG.py
+[2022-12-11 13:31:27,641] {logging_mixin.py:115} INFO - [2022-12-11 13:31:27,640] {dag.py:2371} INFO - Sync 1 DAGs
+[2022-12-11 13:31:28,670] {processor.py:161} INFO - Processing /opt/airflow/dags/xetra_DAG.py took 10.342 seconds

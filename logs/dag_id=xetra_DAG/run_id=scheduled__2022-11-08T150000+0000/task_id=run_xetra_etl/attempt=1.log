@@ -1,0 +1,24 @@
+[2022-11-10 08:49:04,872] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-08T15:00:00+00:00 [queued]>
+[2022-11-10 08:49:04,894] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-08T15:00:00+00:00 [queued]>
+[2022-11-10 08:49:04,895] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-10 08:49:04,896] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-11-10 08:49:04,896] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-10 08:49:04,933] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_xetra_etl> on 2022-11-08 15:00:00+00:00
+[2022-11-10 08:49:04,960] {standard_task_runner.py:52} INFO - Started process 81 to run task
+[2022-11-10 08:49:04,978] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'xetra_DAG', 'run_xetra_etl', 'scheduled__2022-11-08T15:00:00+00:00', '--job-id', '176', '--raw', '--subdir', 'DAGS_FOLDER/xetra_DAG.py', '--cfg-path', '/tmp/tmpk1ceo96h', '--error-file', '/tmp/tmpbvc2efcq']
+[2022-11-10 08:49:04,981] {standard_task_runner.py:80} INFO - Job 176: Subtask run_xetra_etl
+[2022-11-10 08:49:05,676] {task_command.py:369} INFO - Running <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-08T15:00:00+00:00 [running]> on host 0163e0790208
+[2022-11-10 08:49:06,516] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=xetra_DAG
+AIRFLOW_CTX_TASK_ID=run_xetra_etl
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-08T15:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-08T15:00:00+00:00
+[2022-11-10 08:49:21,906] {python.py:173} INFO - Done. Returned value was: None
+[2022-11-10 08:49:22,016] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=xetra_DAG, task_id=run_xetra_etl, execution_date=20221108T150000, start_date=20221110T084904, end_date=20221110T084922
+[2022-11-10 08:49:22,446] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-10 08:49:22,562] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

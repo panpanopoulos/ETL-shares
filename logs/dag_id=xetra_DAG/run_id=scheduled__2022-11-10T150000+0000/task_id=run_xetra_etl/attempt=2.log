@@ -1,0 +1,2 @@
+[2022-11-13 13:11:15,773] {taskinstance.py:1153} INFO - Dependencies not met for <TaskInstance: xetra_DAG.run_xetra_etl scheduled__2022-11-10T15:00:00+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2022-11-13T13:11:15.773425+00:00 and task will be retried at 2022-11-13T13:12:02.809401+00:00.
+[2022-11-13 13:11:15,797] {local_task_job.py:101} INFO - Task is not able to be run
