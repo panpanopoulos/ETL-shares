@@ -23,7 +23,7 @@ Prerequisites:
 3. logs: Contains the logs of the DAG's execution
 4. source_files: Contains the source files generated from The Deutsche Börse (minute by minute granularity)
 5. meta_file: Meta file is used to keep the records of the dates for which the ETL process has run (registered after each ETL execution). Using the meta file, the script determines the next day for which the ETL process will run
-6. xetra_project_notebook: A jupyter notebook which contains the source and the transformed data as well as the code that the ETL process runs to generate the daily report
+6. etl_notebook: A jupyter notebook which contains the source and the transformed data as well as the code that the ETL process runs to generate the daily report
 7. The rest files include configuration for python packages dependencies (Pipfiles) and a docker compose file (docker-compose.yaml) in order to run airflow in Docker
 
 # Source Data Format
