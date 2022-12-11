@@ -1,0 +1,24 @@
+[2022-12-11 19:26:51,877] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_DAG.run_etl_process manual__2022-12-11T19:26:49.807096+00:00 [queued]>
+[2022-12-11 19:26:51,900] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_DAG.run_etl_process manual__2022-12-11T19:26:49.807096+00:00 [queued]>
+[2022-12-11 19:26:51,901] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 19:26:51,901] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-12-11 19:26:51,903] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 19:26:51,947] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_etl_process> on 2022-12-11 19:26:49.807096+00:00
+[2022-12-11 19:26:51,957] {standard_task_runner.py:52} INFO - Started process 559 to run task
+[2022-12-11 19:26:51,965] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_DAG', 'run_etl_process', 'manual__2022-12-11T19:26:49.807096+00:00', '--job-id', '235', '--raw', '--subdir', 'DAGS_FOLDER/etl_DAG.py', '--cfg-path', '/tmp/tmp18kwdvhb', '--error-file', '/tmp/tmpd7f9ja87']
+[2022-12-11 19:26:51,967] {standard_task_runner.py:80} INFO - Job 235: Subtask run_etl_process
+[2022-12-11 19:26:52,112] {task_command.py:369} INFO - Running <TaskInstance: etl_DAG.run_etl_process manual__2022-12-11T19:26:49.807096+00:00 [running]> on host 0163e0790208
+[2022-12-11 19:26:52,338] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_DAG
+AIRFLOW_CTX_TASK_ID=run_etl_process
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T19:26:49.807096+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T19:26:49.807096+00:00
+[2022-12-11 19:26:57,118] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-11 19:26:57,188] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_DAG, task_id=run_etl_process, execution_date=20221211T192649, start_date=20221211T192651, end_date=20221211T192657
+[2022-12-11 19:26:57,306] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-11 19:26:57,442] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

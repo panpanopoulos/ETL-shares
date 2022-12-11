@@ -1,0 +1,26 @@
+[2022-12-11 19:18:37,368] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_DAG.run_etl_process scheduled__2022-11-04T15:00:00+00:00 [queued]>
+[2022-12-11 19:18:37,525] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_DAG.run_etl_process scheduled__2022-11-04T15:00:00+00:00 [queued]>
+[2022-12-11 19:18:37,535] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 19:18:37,542] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-12-11 19:18:37,543] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11 19:18:37,801] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_etl_process> on 2022-11-04 15:00:00+00:00
+[2022-12-11 19:18:38,125] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_DAG', 'run_etl_process', 'scheduled__2022-11-04T15:00:00+00:00', '--job-id', '196', '--raw', '--subdir', 'DAGS_FOLDER/etl_DAG.py', '--cfg-path', '/tmp/tmpq5fnyyxf', '--error-file', '/tmp/tmpybxbpyv_']
+[2022-12-11 19:18:38,053] {standard_task_runner.py:52} INFO - Started process 180 to run task
+[2022-12-11 19:18:38,170] {standard_task_runner.py:80} INFO - Job 196: Subtask run_etl_process
+[2022-12-11 19:18:39,075] {task_command.py:369} INFO - Running <TaskInstance: etl_DAG.run_etl_process scheduled__2022-11-04T15:00:00+00:00 [running]> on host 0163e0790208
+[2022-12-11 19:18:40,178] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_DAG
+AIRFLOW_CTX_TASK_ID=run_etl_process
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-04T15:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-04T15:00:00+00:00
+[2022-12-11 19:19:16,756] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-11 19:19:17,681] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_DAG, task_id=run_etl_process, execution_date=20221104T150000, start_date=20221211T191837, end_date=20221211T191917
+[2022-12-11 19:19:22,292] {local_task_job.py:221} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-12-11 19:19:23,020] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 180. PIDs of all processes in the group: [180]
+[2022-12-11 19:19:23,108] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 180
+[2022-12-11 19:19:23,351] {process_utils.py:75} INFO - Process psutil.Process(pid=180, status='terminated', exitcode=0, started='19:18:37') (180) terminated with exit code 0
