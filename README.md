@@ -6,7 +6,7 @@ The Data pipeline performs the following actions:
 2. Extracts the all the source datasets for the targeted day according to meta_file (more info below) and aggregates them in a single dataset
 3. Performs several transformations by filtering out unecessary columns, and calculates for each share:
    * The opening, closing price, minimum and maximum price 
-   * the Daily traded volume for the targeted date
+   * The Daily traded volume for the targeted date
    * The change percentage of the closing price between the targeted date and the previous date
 4. Loads a report with the aforementioned metrics for the targeted date in a repository
 5. Registers in the meta file the date which was processed
