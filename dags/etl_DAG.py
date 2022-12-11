@@ -2,7 +2,7 @@ from datetime import datetime,timedelta
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 
-from xetra_etl import run_etl
+from etl_process import run_etl
 
 default_args = {
     'owner': 'airflow',
@@ -15,14 +15,14 @@ default_args = {
     'retry_delay': timedelta(minutes=1)
 }
 dag = DAG(
-    'xetra_DAG',
+    'etl_DAG',
     default_args=default_args,
-    description='xetra DAG',
+    description='etl DAG',
     schedule_interval='0 15 * * *',
 )
 
 run_xetra_etl = PythonOperator(
-    task_id='run_xetra_etl',
+    task_id='run_etl_process',
     python_callable=run_etl,
     dag=dag,
 )
